@@ -1,4 +1,4 @@
-views/getAllRoutes.ejs
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,17 +7,17 @@ views/getAllRoutes.ejs
 </head>
 <body>
 <div class="container">
-    <h2>Database Results getting Routes </h2>
+    <h2>Database Results getting Orders </h2>
     <ul>
         <% results.forEach(function(r) { %>
         <li>Order ID:<%= r.id %> </li>
         <ul>
-            <li>Customer ID:( <%=r.CUSTOMER_ID %>  )</li>
-            <li>Billing ID: ( <%=r.BILLING_ID %> ) </li>
-            <li>Shipping ID: ( <%=r.SHIPPING_ID %> ) </li>
-            <li>Date: ( <%=r.DATE %> ) </li>
-            <li>Products: ( <%=r.PRODUCT_VECTOR %> ) </li>
-            <li>Orders: ( <%=r.ORDER_TOTAL %> ) </li>
+            <li>Customer ID: <%=r.CUSTOMER_ID %>  </li>
+            <li>Billing ID:  <%=r.BILLING_ID %>  </li>
+            <li>Shipping ID:  <%=r.SHIPPING_ID %>  </li>
+            <li>Date: <%=r.DATE %>  </li>
+            <li>Products: <%=r.PRODUCTS %>  </li>
+            <li>Orders: <%=r.ORDER_TOTAL %> </li>
         </ul>
         <br/><br/>
         <% }); %>

@@ -9,17 +9,13 @@ var mongoDBURI = process.env.MONGODB_URI || 'mongodb://yc9659:Sara1996@ds255715.
  * @param response
  *
  */
-module.exports.getAllRoutes =  function (request, response) {
+module.exports.getAllOrders =  function (request, response) {
 
     mongodb.MongoClient.connect(mongoDBURI, function(err, db) {
         if(err) throw err;
 
         //get collection of routes
-        var Orders = db.collection('Orders');
-
-
-        //FIRST showing you one way of making request for ALL routes and cycle through with a forEach loop on returned Cursor
-        //   this request and loop  is to display content in the  console log
+        var Orders = db.collection('ORDERS');
 
 
 
