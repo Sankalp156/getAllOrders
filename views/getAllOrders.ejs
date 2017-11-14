@@ -10,13 +10,14 @@ views/getAllRoutes.ejs
     <h2>Database Results getting Routes </h2>
     <ul>
         <% results.forEach(function(r) { %>
-        <li><%= r.name %> - <%= r.frequency %></li>
+        <li>Order ID:<%= r.id %> </li>
         <ul>
             <li>Customer ID:( <%=r.CUSTOMER_ID %>  )</li>
             <li>Billing ID: ( <%=r.BILLING_ID %> ) </li>
-            <li>Billing ID: ( <%=r.BILLING_ID %> ) </li>
-            <li>Billing ID: ( <%=r.BILLING_ID %> ) </li>
-            <li>Billing ID: ( <%=r.BILLING_ID %> ) </li>
+            <li>Shipping ID: ( <%=r.SHIPPING_ID %> ) </li>
+            <li>Date: ( <%=r.DATE %> ) </li>
+            <li>Products: ( <%=r.PRODUCT_VECTOR %> ) </li>
+            <li>Orders: ( <%=r.ORDER_TOTAL %> ) </li>
         </ul>
         <br/><br/>
         <% }); %>
